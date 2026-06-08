@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Catholic parish located in Kurukulawa, Ragama, Sri Lanka, under the Archdiocese of Colombo. Dedicated to St. Lazarus.">
+    <title>St. Lazarus' Church - Kurukulawa | Religious Institutions</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/essential-style.css">
+    <link rel="stylesheet" href="CSS/isntitutions-in-church-style.css">
+    <link rel="icon" type="image/png" href="Assets/Essentials/Jubilee-logo.png">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="heads-up">
+        <div class="div1">
+            <img src="Assets/Essentials/CLI-logo-b.png" alt="St. Lazarus Church" class="title-logo">
+        </div>
+        <div class="div2"></div>
+        <div class="div3">
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <div class="div4"></div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="menu-header">
+            <img src="Assets/Essentials/CLI-logo-b.png" alt="St. Lazarus Church" class="menu-logo">
+            <button class="close-btn" id="close-btn">X</button>
+        </div>
+
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jubilee-site.html">Jubilee Site</a></li>
+                <li><a href="history.html">Our Stories</a></li>
+                <li><a href="priests.html">Our Priests</a></li>
+                <li><a href="societies.html">Our Societies</a></li>
+                <li><a href="gallery.html">Church Gallery</a></li>
+                <li><a href="news.html">Church News</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="isntitutions-in-church.html">Religious Institutions</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-footer">
+            <a href="donation.html" class="menu-donate-btn">Donations</a>
+        </div>
+    </div>
+
+    <!--=======================Religious Institutions=======================-->
+    <section class="institutions-hero">
+        <div class="container">
+            <span class="since-when">Spiritual Communities</span>
+            <h1 class="section-title">Religious Institutions</h1>
+            <p class="section-subtitle">Sacred religious congregations and institutions that serve our parish community with devotion and faith</p>
+        </div>
+    </section>
+
+    <!-- Institutions Grid Section -->
+    <section class="institutions-section">
+        <div class="institutions-container">
+            <!-- Institutions Cards Grid -->
+            <div class="institutions-grid">
+
+                <!-- Institution Card 1 -->
+                <div class="institution-card" data-institution="sisters-of-charity">
+                    <div class="institution-image">
+                        <img src="Assets/Societies/If-no-group-photoUse-PlaceHolder.jpeg" alt="Sisters of Charity" class="group-photo">
+                        <div class="institution-badge">Religious Congregation</div>
+                    </div>
+                    <div class="institution-content">
+                        <h3 class="institution-name">Sisters of Charity</h3>
+                        <p class="institution-short-desc">The dedicated Sisters of Charity serve our parish through compassionate care, educational ministry, and spiritual guidance.</p>
+                        <button class="view-details-btn" onclick="openInstitutionModal('sisters-of-charity')">
+                            <span>View Full Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <div class="institution-meta">
+                            <span><i class="fas fa-users"></i> 8 Members</span>
+                            <span><i class="fas fa-calendar"></i> Active Since 1950</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Institution Card 2 -->
+                <div class="institution-card" data-institution="marist-brothers">
+                    <div class="institution-image">
+                        <img src="Assets/Societies/If-no-group-photoUse-PlaceHolder.jpeg" alt="Marist Brothers" class="group-photo">
+                        <div class="institution-badge">Teaching Order</div>
+                    </div>
+                    <div class="institution-content">
+                        <h3 class="institution-name">Marist Brothers</h3>
+                        <p class="institution-short-desc">The Marist Brothers continue the legacy of St. Marcellin Champagnat in our parish, providing exceptional Catholic education.</p>
+                        <button class="view-details-btn" onclick="openInstitutionModal('marist-brothers')">
+                            <span>View Full Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <div class="institution-meta">
+                            <span><i class="fas fa-users"></i> 5 Members</span>
+                            <span><i class="fas fa-calendar"></i> Active Since 1965</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Institution Card 3 -->
+                <div class="institution-card" data-institution="franciscan-missionaries">
+                    <div class="institution-image">
+                        <img src="Assets/Societies/If-no-group-photoUse-PlaceHolder.jpeg" alt="Franciscan Missionaries" class="group-photo">
+                        <div class="institution-badge">Missionary Order</div>
+                    </div>
+                    <div class="institution-content">
+                        <h3 class="institution-name">Franciscan Missionaries</h3>
+                        <p class="institution-short-desc">Following the footsteps of St. Francis of Assisi, the Franciscan Missionaries embrace a life of simplicity and service.</p>
+                        <button class="view-details-btn" onclick="openInstitutionModal('franciscan-missionaries')">
+                            <span>View Full Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <div class="institution-meta">
+                            <span><i class="fas fa-users"></i> 6 Members</span>
+                            <span><i class="fas fa-calendar"></i> Active Since 1972</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Institution Card 4 -->
+                <div class="institution-card" data-institution="benedictine-monks">
+                    <div class="institution-image">
+                        <img src="Assets/Societies/If-no-group-photoUse-PlaceHolder.jpeg" alt="Benedictine Monks" class="group-photo">
+                        <div class="institution-badge">Contemplative Order</div>
+                    </div>
+                    <div class="institution-content">
+                        <h3 class="institution-name">Benedictine Monks</h3>
+                        <p class="institution-short-desc">The Benedictine Monks from the nearby monastery support our parish through their prayerful presence and spiritual direction.</p>
+                        <button class="view-details-btn" onclick="openInstitutionModal('benedictine-monks')">
+                            <span>View Full Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <div class="institution-meta">
+                            <span><i class="fas fa-users"></i> 4 Members</span>
+                            <span><i class="fas fa-calendar"></i> Assisting Since 1980</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Institution Card 5 -->
+                <div class="institution-card" data-institution="missionaries-of-charity">
+                    <div class="institution-image">
+                        <img src="Assets/Societies/If-no-group-photoUse-PlaceHolder.jpeg" alt="Missionaries of Charity" class="group-photo">
+                        <div class="institution-badge">Service Order</div>
+                    </div>
+                    <div class="institution-content">
+                        <h3 class="institution-name">Missionaries of Charity</h3>
+                        <p class="institution-short-desc">Founded by St. Teresa of Calcutta, the Missionaries of Charity serve the poorest of the poor in our area.</p>
+                        <button class="view-details-btn" onclick="openInstitutionModal('missionaries-of-charity')">
+                            <span>View Full Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <div class="institution-meta">
+                            <span><i class="fas fa-users"></i> 12 Members</span>
+                            <span><i class="fas fa-calendar"></i> Active Since 1985</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Institution Card 6 -->
+                <div class="institution-card" data-institution="salesian-sisters">
+                    <div class="institution-image">
+                        <img src="Assets/Societies/If-no-group-photoUse-PlaceHolder.jpeg" alt="Salesian Sisters" class="group-photo">
+                        <div class="institution-badge">Youth Ministry</div>
+                    </div>
+                    <div class="institution-content">
+                        <h3 class="institution-name">Salesian Sisters of Don Bosco</h3>
+                        <p class="institution-short-desc">The Salesian Sisters dedicate themselves to the education and well-being of young people from disadvantaged backgrounds.</p>
+                        <button class="view-details-btn" onclick="openInstitutionModal('salesian-sisters')">
+                            <span>View Full Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <div class="institution-meta">
+                            <span><i class="fas fa-users"></i> 7 Members</span>
+                            <span><i class="fas fa-calendar"></i> Active Since 1990</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Help Us Improve Section -->
+            <div class="contribute-section">
+                <div class="contribute-card">
+                    <h3>Help Us Improve This Page</h3>
+                    <p>Do you have photos of our parish religious institutions, or information to add about any congregation? We'd love to include your contributions to celebrate all the sacred communities that serve our parish family. Contact us to share your memories and photos!</p>
+                    <a href="https://wa.me/94771070651?text=Hi,%20Lazmedia!%20I%20have%20information%20or%20photos%20to%20share%20about%20the%20religious%20institutions%20at%20St.%20Lazarus'%20Church." target="_blank" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Contact Us on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institution Modal (Hidden by default) -->
+    <div class="institution-modal" id="institutionModal">
+        <div class="modal-overlay" onclick="closeInstitutionModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeInstitutionModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Column 1: Logo -->
+                <div class="footer-col">
+                    <img src="Assets/Essentials/CLI-logo-b.png" alt="St. Lazarus Church" class="footer-logo">
+                    <p class="arch-ds-style">Colombo Archdiocese</p>
+                    <p class="footcol1-desc">A beacon of faith since 1926. Celebrating 100 years of devotion in
+                        2026.
+                    </p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">About Our Parish</a></li>
+                        <li><a href="#mass-schedule-Time">Mass Schedule</a></li>
+                        <li><a href="news.html">News Feed</a></li>
+                        <li><a href="gallery.html">Church Gallery</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="donation.html">Support Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div class="footer-col">
+                    <h4>Contacts</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>St. Lazarus Church,<br>Kurukulawa, Ragama,<br>11101,<br> Sri Lanka</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+94 112 958 637</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>sanlasarusch1926@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Column 4: Social Media -->
+                <div class="footer-col">
+                    <h4>Follow us On</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1Ct8vRTfdm/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/lazmedia_1926?igsh=aGY2OTF1b3FpdWQ2" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@slc-x3f?si=l3OjjDi_9ATM761b" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://whatsapp.com/channel/0029Valq95l0LKZMp50Chm3d" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Rule of Copyright -->
+        <div class="footer-bottom">
+            <p>© 2026 St. Lazarus' Church Media, Kurukulawa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="JS/essential-script.js"></script>
+    <script src="JS/isntitutions-in-church-script.js"></script>
+</body>
+</html>
